@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heroSection {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/rock-paper-scissors-neon-icons-vector.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.heroSection button {
+    margin: 10% auto;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.heroSection button:hover {
+    background-color: blueviolet;
+}
+
+
+.game-page {
+    height: 100vh;
+    text-align: center;
+    margin: 5% auto;
+}
+
+
+.heading {
+    text-transform: uppercase;
+}
+
+.images-div {
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 100px;
+}
+
+.images-div img {
+    cursor: pointer;
+}
+
+.images-div img:hover {
+    filter: drop-shadow(5px 5px 30px #f0e511);
+    
+}

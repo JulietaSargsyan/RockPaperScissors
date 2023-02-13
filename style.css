@@ -29,7 +29,6 @@
 
 
 .game-page {
-    height: 100vh;
     text-align: center;
     margin: 5% auto;
 }
@@ -39,20 +38,117 @@
     text-transform: uppercase;
 }
 
+.score {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.score__text {
+    width: 200px;
+    background-color: rgb(0, 255, 72);
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.score__text:first-child {
+    border-right: 3px solid #f0e511;
+}
+
+#restart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    text-shadow: 1px 1px 5px #f0e511;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    background-color: red;
+    border-radius: 50px;
+}
+
+#restart-btn img{
+    height: 20px;
+    margin-left: 5px;
+}
+
 .images-div {
     width: 100%;
     display: flex;
     gap: 100px;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 100px;
 }
 
-.images-div img {
+.options {
+    cursor: pointer;
+    outline: none;
+}
+
+.options:hover {
+    filter: drop-shadow(5px 5px 30px #f0e511);
+    
+}
+
+
+/* Modal Box */
+.modal {
+    width: 1000px;
+    height: 500px;
+    border: 2px solid #f0e511;
+    margin: 50px auto;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: 600;
+    background-color: red;
+    padding: 4px;
+    border-radius: 50px;
     cursor: pointer;
 }
 
-.images-div img:hover {
-    filter: drop-shadow(5px 5px 30px #f0e511);
-    
+#close-btn:hover {
+    text-decoration: underline;
+}
+
+.modal__box {
+    text-align: center;
+}
+
+.modal__box p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.vs {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+}
+
+#winnerSpan {
+    text-transform: uppercase;
+    text-decoration: underline;
 }

@@ -13,11 +13,35 @@
 <body>
     <div class="game-page">
         <h1 class="heading" >pick one</h1>
+        <div class="score">
+            <div class="score__text">
+                <p>Me: <span class="score__user">0</span></p>
+            </div>
+            <div class="score__text">
+                <p>Computer: <span class="score__computer">0</span></p>
+            </div>
+        </div>
+        <button id="restart-btn">Restart<img src="./img/restart.png" alt="restartIMG"/></button>
         <div class="images-div">
-            <img src="./img/rock.png" alt="rock">
-            <img src="./img/paper.png" alt="paper">
-            <img src="./img/scissorsPNG.png" alt="scissors">
+            <img id="rock" class="options" src="./img/rock.png" alt="rock">
+            <img id="paper" class="options" src="./img/paper.png" alt="paper">
+            <img id="scissors" class="options" src="./img/scissors.png" alt="scissors">
         </div>
     </div>
+
+  <!-- Modal Box -->
+    <div class="modal">
+        <span id="close-btn">Close</span>
+        <div class="modal__box">
+            <img id="user-choice" src="" alt="">
+        </div>
+        <div class="vs">
+            <p id="winnerSpan"></p>
+        </div>
+        <div class="modal__box">
+            <img id="computer-choice" src="" alt="">
+        </div>
+    </div>
+<script src="./script.js"></script>
 </body>
 </html>
